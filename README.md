@@ -1,6 +1,5 @@
 # Post Tag Checklist
-Replace the standard post tag meta box on the post edit screen with a category-style checklist. One key benefit over 
-the standard post tag meta box is the ability to prevent users (by role, etc.) from adding new post tags.
+Replace the standard post tag meta box on the post edit screen with a category-style checklist (checkboxes). One key benefit over the standard post tag meta box is the ability to prevent users (by role, etc.) from creating new tags.
 
 ![Post Tag Checklist screenshot](screenshot.png "Post Tag Checklist screenshot.")
 
@@ -11,8 +10,7 @@ PHP 5.4+
 Download the zip file and install it using the WordPress plugin installer.
 
 ## Usage
-Once installed this plugin will automatically convert the post tag meta box to the category-style checklist. This 
-behavior can be changed by filtering `'post_tag_checklist_toggle'`:
+Once installed this plugin will automatically convert the post tag meta box to the category-style checklist. This behavior can be changed by filtering `'post_tag_checklist_toggle'`:
 
 ```php
 <?php
@@ -29,6 +27,6 @@ add_filter( 'post_tag_checklist_toggle', function( $render_checklist, $args, $ta
 		return false;
 	}
 	
-	$render_checklist;
+	return $render_checklist;
 }, 10, 3 );
 ```
