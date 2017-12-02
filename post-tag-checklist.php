@@ -23,4 +23,4 @@ if ( ! is_admin() ) {
 }
 
 require_once __DIR__ . '/src/Walker_Post_Tag_Checklist.php';
-require_once __DIR__ . '/src/functions/functions.php';
+require_once __DIR__ . '/src/init.php';

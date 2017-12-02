@@ -1,6 +1,6 @@
 <?php
 /**
- * Post Tag Checklist functions.
+ * Initialize Post Tag Checklist.
  *
  * @package     TimJensen\PostTagChecklist
  * @author      Tim Jensen <tim@timjensen.us>
