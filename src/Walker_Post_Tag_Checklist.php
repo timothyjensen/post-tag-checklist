@@ -31,14 +31,14 @@ class Walker_Post_Tag_Checklist extends \Walker_Category_Checklist {
 	 * @param array  $args     An array of arguments. @see wp_terms_checklist()
 	 * @param int    $id       ID of the current term.
 	 */
-	public function start_el( &$output, $term, $depth = 0, $args = array(), $id = 0 ) {
+	public function start_el( &$output, $term, $depth = 0, $args = [], $id = 0 ) {
 		$taxonomy = 'post_tag';
 		$name     = 'tax_input[' . $taxonomy . ']';
 
-		$args['popular_tags'] = empty( $args['popular_cats'] ) ? array() : $args['popular_cats'];
-		$class                = in_array( $term->term_id, $args['popular_tags'] ) ? ' class="popular-category"' : '';
+		$popular_tags = empty( $args['popular_cats'] ) ? [] : $args['popular_cats'];
+		$class        = in_array( $term->term_id, $popular_tags ) ? ' class="popular-category"' : '';
 
-		$args['selected_tags'] = empty( $args['selected_cats'] ) ? array() : $args['selected_cats'];
+		$args['selected_tags'] = empty( $args['selected_cats'] ) ? [] : $args['selected_cats'];
 
 		$output .= "\n<li id='{$taxonomy}-{$term->term_id}'$class>" .
 		           '<label class="selectit"><input value="' . $term->name . '" type="checkbox" name="' . $name . '[]" id="in-' . $taxonomy . '-' . $term->term_id . '"' .
