@@ -1,0 +1,16 @@
+{
+    "name": "timothyjensen/post-tag-checklist",
+    "description": "Replace the standard post tag meta box with a category-style checklist (checkboxes).",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": "^5.4"
+    },
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Tim Jensen",
+            "email": "tim@timjensen.us"
+        }
+    ],
+    "minimum-stability": "dev"
+}

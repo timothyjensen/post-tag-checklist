@@ -10,6 +10,7 @@
  * Version:         0.1.0
  *
  * @package         TimJensen\PostTagChecklist
+ * @license         GPL-3.0+
  */
 
 namespace TimJensen\PostTagChecklist;
