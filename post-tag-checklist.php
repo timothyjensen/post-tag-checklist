@@ -7,10 +7,10 @@
  * Author URI:      https://www.timjensen.us
  * Text Domain:     post-tag-checklist
  * Domain Path:     /languages
- * Version:         1.0.0
+ * Version:         1.0.1
  *
  * @package         TimJensen\PostTagChecklist
- * @license         GPL-3.0+
+ * @license         GPL-3.0-or-later
  */
 
 namespace TimJensen\PostTagChecklist;
